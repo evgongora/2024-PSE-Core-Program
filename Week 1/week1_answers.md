@@ -87,6 +87,12 @@ component main = HashProof();
 
 What is the primary difference between symmetric and asymmetric encryption?
 
+Key Difference: The Symmetric Encryption uses the same key to encrypt and decrypt data while the Asymmetric Encryption uses a private and a public key to encrypt and decrypt.
+
 Can you briefly explain how AES (Advanced Encryption Standard) works?
 
-What makes RSA a popular choice for public-key encryption? :::
+Originally known as Rjindael standard, it's a encryption standard made by the USA Government in which the cipher arranges data in a 4x4 grid in which uses substitution, permutation and key addition. It has a block size of 128 bits, but can have different key lenghts as AES-128, AES-192, AES-256. 
+
+What makes RSA a popular choice for public-key encryption? 
+
+It's a secure encryption since it uses a mathematical difficult process of factoring large prime numbers, using two different but linked keys by Asymmetric encryption. It can be easy to compute in one direction but difficult to compute in reverse.
