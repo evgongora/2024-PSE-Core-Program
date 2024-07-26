@@ -112,3 +112,17 @@ Is a cryptographic algorithm where the input data is processed through a mathema
 What is the Poseidon hash function and why is it particularly useful in ZKPs?
 
 It's a hash function based in the Hades Strategy [GLR+20], a mixture of full nonlinear and partial nonlinear rounds, made with a sponge hash construction. It's less expensice and are designed to be very efficent as algebraic circuits.
+
+### Merkle Tree
+
+Can you describe the structure of a Merkle tree?
+
+It's a regular binary tree, leafs store hashes of chunks of data and applies a hash function to the right and left leafs then applies it to the parent node ending with a root hash.
+
+How are Merkle trees used within the blockchain context?
+
+A blockchain can potentially have thousands of blocks with thousands of transactions in each block. Memory space and computing power are two challenges, so it would be optimal to use as little data as possible for veryfing transactions. Merkle trees can reduce CPU processing and prove better security.
+
+Why are Merkle trees useful for efficient and secure verification of large data structures?
+
+It makes possible to simplify information when searching specific data inside a hash root, it searches specific nodes instead of large chunks of data or the full hash root.
