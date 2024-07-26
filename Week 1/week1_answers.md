@@ -103,7 +103,12 @@ It's a secure encryption since it uses a mathematical difficult process of facto
 
 What is a hash function and what are its primary uses in cryptography?
 
-
+Hashing function process it to take an input and return a fixed-size string of bytes, it's irreversible so you can't use the hash value to retrieve the original data. SHA-256 and Poseidon are popular cryptographic hash functions.
 
 How does the SHA-256 hashing algorithm function, in simple terms?
-What is the Poseidon hash function and why is it particularly useful in ZKPs? 
+
+Is a cryptographic algorithm where the input data is processed through a mathematical function, resulting in a distinct output hash. It generates a fixed-size 256-bit (32 byte) hash. This algorithm divides the input into blocks of 512 bits, each processed in 64 rounds of operations.
+
+What is the Poseidon hash function and why is it particularly useful in ZKPs?
+
+It's a hash function based in the Hades Strategy [GLR+20], a mixture of full nonlinear and partial nonlinear rounds, made with a sponge hash construction. It's less expensice and are designed to be very efficent as algebraic circuits.
