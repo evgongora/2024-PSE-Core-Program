@@ -83,3 +83,10 @@ component main = HashProof();
 } */
 
 ```
+### Symmetric vs Asymmetric Encryption (AES, RSA)
+
+What is the primary difference between symmetric and asymmetric encryption?
+
+Can you briefly explain how AES (Advanced Encryption Standard) works?
+
+What makes RSA a popular choice for public-key encryption? :::
