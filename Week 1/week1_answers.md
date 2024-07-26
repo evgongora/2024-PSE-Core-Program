@@ -83,6 +83,8 @@ component main = HashProof();
 } */
 
 ```
+hashOutput = 4267533774488295900887461483015112262021273608761099826938271132511348470966
+
 ### Symmetric vs Asymmetric Encryption (AES, RSA)
 
 What is the primary difference between symmetric and asymmetric encryption?
@@ -96,3 +98,12 @@ Originally known as Rjindael standard, it's a encryption standard made by the US
 What makes RSA a popular choice for public-key encryption? 
 
 It's a secure encryption since it uses a mathematical difficult process of factoring large prime numbers, using two different but linked keys by Asymmetric encryption. It can be easy to compute in one direction but difficult to compute in reverse.
+
+### Hash Functions, Merkle Trees
+
+What is a hash function and what are its primary uses in cryptography?
+
+
+
+How does the SHA-256 hashing algorithm function, in simple terms?
+What is the Poseidon hash function and why is it particularly useful in ZKPs? 
