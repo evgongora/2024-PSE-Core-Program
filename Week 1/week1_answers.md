@@ -126,3 +126,14 @@ A blockchain can potentially have thousands of blocks with thousands of transact
 Why are Merkle trees useful for efficient and secure verification of large data structures?
 
 It makes possible to simplify information when searching specific data inside a hash root, it searches specific nodes instead of large chunks of data or the full hash root.
+
+### Digital Signatures
+
+Can you describe what digital signatures are and why they are essential in digital communications?
+
+They are a way for a verifier to prove that they sent a document or data by signing it with a private key 
+applying the digital signature, and the receiver will verify with the public key that the information was seny by the verifier.
+
+Explain the workings of the Digital Signature Algorithm (DSA).
+
+It's a FIPS for digital signatures, it can verify the origin of the sender using the right key combination, the sender cannot claim they never sent the message if the signature is verified and you can not tamper the with the message since it will prevent the bundle from being decrypted altogether.
