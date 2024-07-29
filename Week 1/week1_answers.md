@@ -137,3 +137,25 @@ applying the digital signature, and the receiver will verify with the public key
 Explain the workings of the Digital Signature Algorithm (DSA).
 
 It's a FIPS for digital signatures, it can verify the origin of the sender using the right key combination, the sender cannot claim they never sent the message if the signature is verified and you can not tamper the with the message since it will prevent the bundle from being decrypted altogether.
+
+### DLP-based Public-Key Cryptography (DLP, DH, Elgamal)
+
+What is the Discrete Logarithm Problem (DLP)?
+
+It's a fundamental problem in number theory and cryptography, ensuring that the problem is easy to solve from one way but difficult to reverse it, by using modular arithmetic.
+Given a prime number p, a generator 𝑔 (a number that can generate all possible remainders when raised to different powers modulo 𝑝), and a number 𝑦, the problem is to find an integer 𝑥 such that:
+
+g^𝑥 ≡ 𝑦 mod 𝑝
+
+How does the Diffie-Hellman protocol work?
+
+
+The Diffie-Hellman key exchange is a method for securely sharing cryptographic keys over an insecure channel. Both parties agree on a large prime number 𝑝 and a base 𝑔 (which are public), and each selects a private secret number. They then exchange public values derived from these secrets, using modular exponentiation. Each party combines the received public value with their own private key to compute a shared secret key. This key is the same for both parties due to the mathematical properties of modular arithmetic.
+
+What is the main idea behind ElGamal encryption?
+
+To securely send a secret message using math and a shared key. Here’s how it works: First, you choose a secret key and use it to create a public key, which you share with others. When someone wants to send you a message, they use your public key to encrypt it. The encryption process mixes the message with some random numbers to make it unreadable. Only you can decrypt it using your secret key. This way, even if someone intercepts the encrypted message, they can’t understand it without your secret key. 
+
+Can you name a drawback of using DLP-based systems?
+
+They can be vulnerable to attacks if not properly managed. For example, if someone finds a way to solve the DLP problem more easily than expected, they could potentially break the security of the system. 
